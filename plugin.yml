@@ -1,0 +1,29 @@
+name: PandoraMem
+version: 1.3
+description: Checking and freeing memory!
+author: DawnBudgie
+main: me.DawnBudgie.PandoraMem.PandoraMem
+
+commands:
+    memory:
+      description: Free up memory. Also try /memory check to check Your memory or /memory update to update the plugin.
+      alias: [vmemory]
+    mem:
+      description:  /memory alias.
+      alias: [vmem]
+permissions:
+    memory.*:
+        description: All permissions.
+        default: op
+        children:
+            memory.free: true
+            memory.check: true
+    memory.free:
+        description: Free up memory.
+        default: op
+    memory.check:
+        description: Show memory stats.
+        default: op
+    memory.restart:
+        description: Allow to restart server.
+        default: op

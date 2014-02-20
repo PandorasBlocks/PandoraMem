@@ -1,0 +1,26 @@
+Memory:
+  time:
+    restart: 120
+    freeup: 600
+  debug: false
+  auto-update: true
+  auto-restart: true
+  min-ram: 250
+Messages:
+  fail:
+    first-try: 'Memory not freed :('
+    second-try: 'Try failed :('
+    trying: 'Second try!'
+    no-perm: 'You dont have permissions!'
+  info:
+    freed-memory: 'Huray! Memory freed: '
+    total-memory: 'Total memory: '
+    free-memory: 'Free memory: '
+    used-memory: 'Used memory: '
+    automatic-on: 'Automatic freeing enabled!'
+    automatic-off: 'Automatic freeing disabled!'
+    automatic-restart-on: 'AutoRestart Activated!'
+    automatic-restart-off: 'AutoRestart DeActivated!'
+  restart:
+    console: 'Safety Server Rebooting!'
+    players: 'Server will be restarted!'
