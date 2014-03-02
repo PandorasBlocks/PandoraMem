@@ -14,7 +14,6 @@ public class PandoraMem
   extends JavaPlugin
   implements CommandExecutor
 {
-  private static final long MEGABYTE = 1048576L;
   public static FileConfiguration config;
   private static Logger log;
   public static PandoraMem plugin;
@@ -206,7 +205,7 @@ public class PandoraMem
   
   public void Memory(Player player)
   {
-    String MC = ChatColor.BLUE + "[MemoryChecker]=======================================";
+    String MC = ChatColor.BLUE + "[PandoraMem]=======================================";
     
     String used = config.getString("Messages.info.used-memory");
     String total = config.getString("Messages.info.total-memory");
